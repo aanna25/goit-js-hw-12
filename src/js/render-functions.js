@@ -42,4 +42,14 @@ export function showLoader() {
 export function hideLoader() {
     const loader = document.querySelector(".loader");
     loader.classList.add("hidden");
-  }
+}
+  
+export function showLoadMoreButton() {
+  const loadMoreButton = document.querySelector(".load-more");
+  loadMoreButton.classList.remove("hidden");
+}
+
+export function hideLoadMoreButton() {
+  const loadMoreButton = document.querySelector(".load-more");
+  loadMoreButton.classList.add("hidden");
+}
